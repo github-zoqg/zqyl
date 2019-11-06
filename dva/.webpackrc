@@ -1,0 +1,6 @@
+{
+    //按需加载antd
+    "extraBabelPlugins": [
+ 	    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+    ]
+}
