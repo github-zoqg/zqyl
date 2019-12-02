@@ -125,6 +125,7 @@ export default {
     },
     mounted() {
         this.initHandle();
+        console.log(this.$axios)
     },
     methods: {
         //获取当前选中节点对象
@@ -249,6 +250,16 @@ export default {
         },
         // 初始化值
         initHandle() {
+            this.$axios.post("/app/mock/32/taskGroup/info/taskGroup/info", {
+                    taskId: 1
+                })
+                .then(res => {
+                    console.log(res);
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+
             if (this.valueId) {
                 this.valueTitle = this.$refs.selectTree.getNode(
                     this.valueId

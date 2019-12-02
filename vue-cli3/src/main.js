@@ -5,6 +5,7 @@ import router from "./router/routes/index"
 import filters from "./assets/filters/index"
 import store from "./store/index"
 import ElementUI from 'element-ui'
+import "./assets/global/axios";
 import 'element-ui/lib/theme-chalk/index.css'
 import "./assets/style/index.sass"
 
@@ -30,5 +31,6 @@ new Vue({
   VueAMap,
   router,
   store,
+  // axios,
   render: h => h(App),
 }).$mount('#app')
